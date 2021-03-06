@@ -17,6 +17,7 @@ mongoose.connection.on('connected', () =>{
 
 app.get("/", (req, res) => {
     res.send("Mathias Vraa");
+    console.log("Test");
 });
 
 app.get("/players", (req, res) => {
