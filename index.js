@@ -10,9 +10,7 @@ app.use('/mypage', mypageRouter);
 app.get("/", (req, res) => {
     res.send("Mathias Vraa");
 
-    res.render('mypage', {
-        title: 'My List Page'
-    });
+
 });
 
 app.get("/players", (req, res) => {
