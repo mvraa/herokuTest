@@ -1,5 +1,10 @@
 const express = require("express");
 const app = express();
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
 const importData = require("./data.json");
 let port = process.env.PORT || 3000;
 
