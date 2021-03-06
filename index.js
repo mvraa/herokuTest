@@ -4,6 +4,8 @@ const importData = require("./data.json");
 let port = process.env.PORT || 3000;
 
 // router:
+const layouts = require("express-ejs-layouts");
+app.use(layouts);
 var mypageRouter = require('./routes/mypage');
 app.use('/mypage', mypageRouter);
 
